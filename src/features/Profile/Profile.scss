@@ -1,0 +1,55 @@
+.user-profile {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    min-height: calc(100vh - 60px);
+    width: 25%;
+
+    .avatar {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .text-info {
+        .text-item {
+            font-size: 16px;
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+
+            p {
+                line-height: 20px;
+            }
+
+            .name {
+                font-size: 32px;
+            }
+
+            .icon {
+                font-size: 24px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .action {
+        padding: 10px;
+        width: 100px;
+        background-color: orange;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 12px;
+        outline: none;
+        border: none;
+    }
+}
+
+.post-area {
+    justify-self: flex-end;
+    margin-left: 31%; 
+    width: 40%;
+}

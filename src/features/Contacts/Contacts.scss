@@ -1,0 +1,53 @@
+.contacts {
+    width: 22vw;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    z-index: 0;
+    h3 {
+        color: rgb(80, 80, 80);
+        padding: 8px;
+        margin: 0;
+    }
+    .contacts-list {
+        padding: 0;
+        margin: 0;
+        .contact-item {
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 8px;
+            .avatar {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 12px;
+                padding: 4px;
+                &.active {
+                    background-color: rgb(58, 185, 7);
+                }
+                &.inactive {
+                    background-color: red;
+                }
+            }
+            .status {
+                padding: 4px;
+                border-radius: 50%;
+                &.active {
+                    background-color: green;
+                }
+                &.inactive {
+                    background-color: red;
+                }
+            }
+            p {
+                margin: 0;
+            }
+            &:hover {
+                background-color: #ccc;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,181 @@
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: calc(33vw - 68px);
+    font-weight: 500;
+    align-items: flex-start;
+    .icon {
+        font-size: 36px;
+        margin-right: 16px;
+    }
+    .information {
+        display: flex;
+        align-items: center;
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+        .name {
+            font-size: 28px;
+        }
+    }
+    .link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    .player {
+        margin: 20px 0;
+        width: 70%;
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        background-image: linear-gradient(180deg, #ffd89b, #19547b);
+        .player-info {
+            display: flex;
+            .player-img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                align-items: center;
+            }
+            .player-detail {
+                margin-left: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .name {
+                    font-size: 20px;
+                }
+                .artist {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .player-control {
+            .player-button {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                .player-btn {
+                    font-size: 36px;
+                }
+                .player-volume {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 26.5%;
+
+                    position: relative;
+                    &:hover {
+                        .volume-bar {
+                            opacity: 1;
+                        }
+                    }
+                    .volume-bar {
+                        transition: opacity 0.4s ease-out;
+                        opacity: 0;
+                    }
+                }
+            }
+            .player-progress {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .current-time {
+                    font-size: 14px;
+                    width: 10%;
+                }
+                .progress-bar {
+                    width: 70%;
+                    margin: 0 10px;
+                    border-radius: 12px;
+                    -webkit-appearance: none;
+                    &::-webkit-progress-value {
+                        background: #ffd89b;
+                    }
+                    &::-webkit-slider-runnable-track {
+                        width: 300px;
+                        height: 6px;
+                        background: white;
+                        border-radius: 12px ;
+                        border: none;
+                    }
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        border: none;
+                        height: 12px;
+                        width: 12px;
+                        border-radius: 50%;
+                        background: #ffd89b;
+                        margin-top: -3px;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .end-time {
+                    width: 10%;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .weather {
+        background-image: linear-gradient(90deg, #4158d0, #c750c0);
+        color: white;
+        width: 70%;
+        margin-left: 0;
+        padding: 36px 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        .city-name {
+            margin: 0;
+            align-self: center;
+        }
+        .weather-info {
+            display: flex;
+            align-items: center;
+            .weather-icon {
+                font-size: 50px;
+                margin-left: 50px;
+                margin-right: 50px;
+                &.temperature {
+                    color: rgb(255, 140, 0);
+                }
+                &.humidity {
+                    font-size: 60px !important;
+                    margin-left: 35px;
+                    margin-right: 55px;
+                    color: rgb(0, 85, 255);
+                }
+                &.wind {
+                    color: rgb(51, 166, 184);
+                }
+            }
+            .weather-img {
+                width: 150px;
+            }
+            .weather-text {
+                text-transform: capitalize;
+            }
+
+            h3 {
+                margin: 4px 0;
+            }
+        }
+    }
+}

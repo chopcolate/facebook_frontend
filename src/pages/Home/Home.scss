@@ -1,0 +1,108 @@
+.content {
+    width: 40vw;
+    margin-left: calc(29vw);
+    .status {
+        height: fit-content;
+        border: 1px solid #ccc;
+        padding: 4px 2px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        .input-area {
+            width: 90%;
+            font-size: 20px;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+            .post-content {
+                width: 90%;
+                .image {
+                    width: 100%;
+                }
+                .input {
+                    width: 100%;
+                }
+            }
+            .post {
+                border-radius: 50%;
+                background-color: #fff;
+                border: none;
+                outline: none;
+                .post-btn {
+                    color: #1b74e4;
+                }
+            }
+        }
+        .status-actions {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            .status-action {
+                width: 30%;
+                min-height: 40px;
+                display: flex;
+                padding: 4px;
+                align-items: center;
+                color: black;
+                justify-content: space-evenly;
+                p {
+                    margin: 0;
+                }
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(221, 221, 221);
+                    border-radius: 12px;
+                }
+            }
+        }
+        .icon {
+            font-size: 28px;
+        }
+    }
+
+    .posts-list {
+
+        list-style: none;
+        .post-item {
+            background-color: #fff;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 8px;
+            .post-info {
+                display: flex;
+                align-items: flex-start;
+                .avatar {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-right: 12px;
+                }
+                .info {
+                    .name {
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                    .time {
+                        font-size: 14px;
+                        color: #808080;
+                    }
+                }
+            }
+        }
+        
+
+        .post-content {
+            .post-text {
+                font-size: 18px;
+            }
+            .post-img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.watch {
+    width: 100vw;
+    margin-left: calc(29vw);
+    .audio {
+        width: 100%;
+        .title {
+
+        }
+        .audio-list {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            .audio-item {
+                padding: 40px 20px;
+                width: 220px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-image: linear-gradient(0, #bdc3c7, #2c3e50);
+                transition: linear 0.2s;
+                border-radius: 8px;
+                &:hover {
+                    transform: scale(1.1);
+                    background-image: linear-gradient(0, #b92b27, #1565C0);
+                    .audio-info {
+                        color: white;
+                    }
+                }
+                .audio-img {
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 50%;
+                }
+                .audio-info {
+                    color: white;
+                    .name {
+                        font-size: 20px;
+                        font-weight: 700;
+                        white-space: nowrap
+                    }
+                    .artist {
+
+                    }
+                }
+
+            }
+        }
+        
+
+    }
+
+}
